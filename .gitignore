@@ -3,3 +3,4 @@ __pycache__/
 *.pth
 .idx/
 .python-version
+streamlit_log.txt
