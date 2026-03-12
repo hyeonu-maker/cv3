@@ -5,3 +5,4 @@ numpy
 nibabel
 matplotlib
 scipy
+plotly
