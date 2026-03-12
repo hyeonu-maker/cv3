@@ -1,16 +1,4 @@
 import os
-import subprocess
-import sys
-
-# [최후의 수단] Streamlit Cloud에서 plotly 설치 에러가 날 경우 강제 설치
-try:
-    import plotly
-    import plotly.graph_objects as go
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "plotly"])
-    import plotly
-    import plotly.graph_objects as go
-
 import time
 import tempfile
 from pathlib import Path
@@ -21,6 +9,7 @@ import nibabel as nib
 import matplotlib.pyplot as plt
 import streamlit as st
 import torch
+import plotly.graph_objects as go
 
 from monai.inferers import sliding_window_inference
 from monai.networks.nets import UNet
